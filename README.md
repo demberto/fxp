@@ -9,7 +9,7 @@
       <a>
         <img alt="Build" src="https://img.shields.io/github/workflow/status/demberto/fxp/publish"/>
       </a>
-      <a href="https://fxp.rtfd.io/">
+      <a href="https://fxp.rtfd.io/en/latest">
         <img alt="Docs" src="https://readthedocs.org/projects/fxp/badge/?version=latest"/>
       </a>
     </td>
