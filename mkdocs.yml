@@ -1,0 +1,29 @@
+site_name: fxp
+repo_url: https://github.com/demberto/fxp
+nav:
+  - Getting Started: index.md
+  - User Guide: api.md
+  - Changelog: changelog.md
+  - Contributors: authors.md
+theme: readthedocs
+plugins:
+  - include-markdown
+  - autorefs
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          selection:
+            filters:
+              - "!^_"  # exlude all members starting with _
+              - "^__init__$"  # but always include __init__ modules and methods
+          rendering:
+            show_signature_annotations: true
+      watch:
+        - fxp
+        - AUTHORS.md
+        - CHANGELOG.md
+        - CONTRIBUTING.md
+        - README.md
+markdown_extensions:
+  - admonition

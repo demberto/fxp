@@ -1,0 +1,4 @@
+mkdocs
+mkdocs-include-markdown-plugin
+mkdocstrings
+pymdown-extensions
