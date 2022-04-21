@@ -1,11 +1,12 @@
 include .editorconfig
+include .vscode/settings.json
 include *.md
 include *.txt
 include *.yaml
 include *.yml
 include tox.ini
 include VERSION
-include docs *.md
-include docs *.txt
-include tests *.py
-include tests/assets *.fxp
+recursive-include docs *.md
+recursive-include docs *.txt
+recursive-include tests *.py
+recursive-include tests/assets *.fxp
