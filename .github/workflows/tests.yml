@@ -34,12 +34,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install coverage[toml] pytest -rrequirements.txt
+          pip install pytest pytest-cov -rrequirements.txt
       - name: Calculate coverage
-        run: |
-          coverage run -m pytest
-          coverage report --fail-under 80
-          coverage xml
+        run: pytest --cov --cov-report xml:coverage.xml --cov-fail-under 80
       - name: Upload to codecov.io
         uses: codecov/codecov-action@v2
         with:
